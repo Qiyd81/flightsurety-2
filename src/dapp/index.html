@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <div class="row top-20">
+            <label class="h5">Status</label>
+        </div>
+
+        <div id="display-status" class="top-20">
+        </div>
+        
+    </main>
+
+    <main class="container">
+
+        <div class="row top-20">
+            <label class="h5">Airlines</label>
+        </div>
+
+        <div class="row top-20">
+            <label class="form">Airline address</label> <input type="text" id="airline-address">
+            <label class="form">Value (Wei)</label> <input type="text" id="fund-value"> <btn class="btn btn-primary" id="submit-funds">Add Funds</btn>
+        </div>
+        <div class="row top-20">
+            <label class="form">New Airline address</label> <input type="text" id="new-airline-address">
+            <label class="form">New Airline name</label> <input type="text" id="new-airline-name"> <btn class="btn btn-primary" id="submit-airline">Add Airline</btn>
+        </div>
+        <div class="row top-20">
+            <label class="form">Airline address</label> <input type="text" id="voter-airline-address">
+            <label class="form">Appicant Airline address</label> <input type="text" id="applicant-airline-address"> <btn class="btn btn-primary" id="submit-vote">Vote Airline</btn>
+        </div>
+        
+    </main>
+
+    <main class="container">
+
+        <div class="row top-20">
+            <label class="h5">Passenger</label>
+        </div>
+        <div class="row top-20">
+            <label class="form">Airline address</label> <input type="text" id="flight-airline-address">
+            <label class="form">Flight</label> <input type="text" id="flight-number">
+            <label class="form">Time</label> <input type="text" id="timestamp">
+        </div>
+        <div class="row top-20">
+            <label class="form">Passenger address</label> <input type="text" id="passenger-address">
+            <label class="form">Insurance value</label> <input type="text" id="insurance-value"> <btn class="btn btn-primary" id="submit-buy">Buy</btn>
+        </div>
+        
+    </main>
+
+    <main class="container">
+
+        <div class="row top-20">
+            <label class="h5">Oracles</label>
+        </div>
+        <div class="row top-20">
+            <label class="form">Airline address</label> <input type="text" id="oracle-airline-address">
+            <label class="form">Flight</label> <input type="text" id="oracle-flight-number">
+            <label class="form">Time</label> <input type="text" id="oracle-timestamp">
+            <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div>
+        
+    </main>
+
+    <main class="container">
+
+        <div class="row top-20">
+            <label class="h5">Claim insurance</label>
+        </div>
+        <div class="row top-20">
+            <label class="form">Passenger address</label> <input type="text" id="withdraw-passenger-address">
+            <label class="form">Get passenger credit</label> <btn class="btn btn-primary" id="submit-credit">Credit</btn>
+            <label class="form">Claim insurance</label> <btn class="btn btn-primary" id="submit-withdraw">Claim insurance</btn>
+        </div>
+        
+    </main>
+
+    <main class="container">
+        <div class="row top-20">
+            <label class="h5">Log</label>
+        </div>
+
+        <div id="display-log" class="top-20">
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
